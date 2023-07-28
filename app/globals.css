@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji !important;
+}
+
+.bg-dark {
+  @apply bg-neutral-950
+}
+
+.flex_center-between {
+  @apply flex items-center justify-between
+}
+
+.width-calc {
+  width: 170px;
+}
+
+.border-rigth {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.border-left {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.border-bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.border-top {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.border-full {
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+  --tw-ring-color: transparent;
+  border-color: transparent;
+  --tw-ring-shadow: none;
+}
+
+.user-card-hover:hover {
+  background-color: #655DFE;
+  color: #FFF;
+}
+
+.user-card-hover:hover span:nth-child(2) {
+  color: #FFF;
+  transition: all;
+  transition-duration: 300;
+}
+
+.overflow-auto-users-card {
+  height: calc(100vh - 110px);
+  overflow-y: auto;
+}
+
+.overflow-auto-profile-side {
+  height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+
+.overflow-auto-messages {
+  height: calc(100vh - 144px);
+  overflow-y: auto;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c4c4c4;
+  border-radius: 10px;
+}
+
+.text-wrap {
+  margin: 0;
+  word-break: break-word;
+  white-space: pre-wrap;
+  line-height: 1.3125;
+  text-align: initial;
+  unicode-bidi: plaintext;
+  display: flex;
+  gap: 4px;
+  color: #A9A6B4;
+}
+
+.chat-card-clip-path {
+  clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 100%, 79% 100%, 21% 100%, 21% 75%, 0 75%, 0 33%, 0 0);
+}
+
+.w-4 {
+  display: none !important;
+}
+
+.shadow-for-cirle {
+  width: 50%;
+  height: 50%;
+  backdrop-filter: blur(35px);
+  position: absolute;
+  bottom: 0;
+}
+
+.rounded-profile-card-end {
+  border-end-start-radius: 0.25rem;
+  border-end-end-radius: 0.25rem;
+}
+
+.rounded-profile-card-start {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
